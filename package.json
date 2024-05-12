@@ -1,0 +1,21 @@
+{
+  "name": "learning-visualization",
+  "version": "1.0.0",
+  "description": "学习可视化",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/d3": "^7.4.3",
+    "vite": "^5.2.11"
+  },
+  "dependencies": {
+    "d3": "^7.9.0"
+  }
+}
