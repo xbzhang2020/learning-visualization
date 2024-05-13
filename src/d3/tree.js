@@ -19,11 +19,11 @@ const data = {
 let width = 400,
   height = 200;
 const svg = create("svg").attr("width", width).attr("height", height);
-const g = svg.append("g").attr("transform", `translate(40,20)`);
+const g = svg.append("g").attr("transform", `translate(40,30)`);
 
 // 创建树布局
 const root = hierarchy(data);
-const treeLayout = tree().size([width - 80, height - 40]);
+const treeLayout = tree().size([width - 80, height - 60]);
 treeLayout(root);
 
 // 绘制连线
@@ -49,12 +49,13 @@ let node = g
 
 node
   .append("circle")
-  .attr("r", 15)
+  .attr("r", 20)
   .attr("fill", "white")
   .attr("stroke", "black");
 node
   .append("text")
-  .attr("y", 5)
+  .attr('x', 0)
+  .attr("y", 6)
   .attr("text-anchor", "middle")
   .text((d) => d.data.name);
 
